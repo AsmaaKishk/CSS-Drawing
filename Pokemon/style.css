@@ -1,0 +1,63 @@
+body {
+  color: rgb(212, 214, 221);
+  background-color: currentColor;
+}
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ball {
+  border-top: 250px solid #f25b54;
+  border-left: 250px solid #f25b54;
+  border-bottom: 250px solid #f2f2f2;
+  border-right: 250px solid #f2f2f2;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  box-shadow: 50px 10px 60px #465266;
+}
+
+.ball::before {
+  content: "";
+  position: absolute;
+  height: 17px;
+  width: 500px;
+  background-color: #565656;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.empty {
+  position: absolute;
+  width: 20px;
+  height: 17px;
+  background-color: currentColor;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 500px 0 currentColor;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 100px;
+  background-color: #565656;
+  border-radius: 50%;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 12px solid #f2f2f2;
+}
